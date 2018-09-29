@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.xiaobai.nag.FirstFragment"
+        android:label="FirstFragment" />
+    <fragment
+        android:id="@+id/scondFragment"
+        android:name="com.example.xiaobai.nag.ScondFragment"
+        android:label="ScondFragment" />
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.example.xiaobai.nag.ThreeFragment"
+        android:label="ThreeFragment" />
+
+    <action
+        android:id="@+id/open_fragment1"
+        app:destination="@id/firstFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"></action>
+    <action android:id="@+id/open_fragment2"
+        app:destination="@id/scondFragment"></action>
+    <action android:id="@+id/open_fragment3"
+        app:destination="@id/threeFragment"></action>
+
+</navigation>
